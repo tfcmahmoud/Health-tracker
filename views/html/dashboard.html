@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+    <center>
+        <h1 id="hellomessage">Hello $$name$$</h1>
+    </center>
+    <div class="stats">
+        <p id="sleep">Avg Sleep<br><a id="addsleep" href="javascript:showpopup('sleepOverlay')">$$sleep$$ hours</a></p>
+        <p id="weight">Weight<br><a id="editweight" href="javascript:showpopup('weightOverlay')">$$weight$$ KG</a></p>
+        <p id="weight">Steps<br><a id="addsteps" href="javascript:showpopup('stepsOverlay')">$$steps$$</a></p>
+    </div>
+    <div class="stats">
+        <p id="sleepg">Sleep Goal<br><a id="addsleepg" href="javascript:showpopup('sleepgOverlay')">$$sleepg$$ hours</a></p>
+        <p id="weightg">Weight Goal<br><a id="addweightg" href="javascript:showpopup('weightgOverlay')">$$weightg$$ KG</a></p>
+    </div>
+    <div class="popup-overlay" id="sleepOverlay">
+        <div class="popup-content">
+                <form id="sleep-form" action="">
+                <span class="close-button" onclick="hidepopup('sleepOverlay')">&times;</span>
+                <header>Hours Slept</header>
+                <input type="number" placeholder="Hours Slept" class="input" id="sleepnum" required><br>
+                <input type="submit" value="Add" class="submit-button"><br>
+            </form>
+        </div>
+    </div>
+    <div class="popup-overlay" id="weightOverlay">
+        <div class="popup-content">
+                <form id="weight-form" action="">
+                <span class="close-button" onclick="hidepopup('weightOverlay')">&times;</span>
+                <header>Change Weight (KG)</header>
+                <input type="number" placeholder="New Weight" class="input" id="weightnum" required><br>
+                <input type="submit" value="Submit" class="submit-button"><br>
+            </form>
+        </div>
+    </div>
+    <div class="popup-overlay" id="stepsOverlay">
+        <div class="popup-content">
+                <form id="steps-form" action="">
+                <span class="close-button" onclick="hidepopup('stepsOverlay')">&times;</span>
+                <header>Add Steps</header>
+                <input type="number" placeholder="Steps Count" class="input" id="stepsnum" required><br>
+                <input type="submit" value="Add" class="submit-button"><br>
+            </form>
+        </div>
+    </div>
+    <div class="popup-overlay" id="sleepgOverlay">
+        <div class="popup-content">
+                <form id="sleepg-form" action="">
+                <span class="close-button" onclick="hidepopup('sleepgOverlay')">&times;</span>
+                <header>Add Sleep Goal</header>
+                <input type="number" placeholder="Sleep Goal" class="input" id="sleepgnum" required><br>
+                <input type="submit" value="Add" class="submit-button"><br>
+            </form>
+        </div>
+    </div>
+    <div class="popup-overlay" id="weightgOverlay">
+        <div class="popup-content">
+                <form id="weightg-form" action="">
+                <span class="close-button" onclick="hidepopup('weightgOverlay')">&times;</span>
+                <header>Add Weight Goal</header>
+                <input type="number" placeholder="Weight Goal" class="input" id="weightgnum" required><br>
+                <input type="submit" value="Add" class="submit-button"><br>
+            </form>
+        </div>
+    </div>
+    <center>
+    <br>
+    <br>
+    <h3><a href="/tips" id="tips">Tips For A Healthier Life</a></h3>
+    </center>
+    <div class="spacer"></div>
+    <footer>
+        <ul>
+            <li>copyright &copy; Health Tracker | Mahmoud Ghassan</li>
+        </ul>
+    </footer>
+    <script src="../js/dashboard.js">
+
+    </script>
+</body>
+</html>

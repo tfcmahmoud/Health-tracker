@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href="/signup">Sign Up</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+    <div id="form-div">
+        <form id="signup-form" action="">
+            <header>Sign Up</header>
+            <input type="email" placeholder="Email" class="input" id="email" required><br>
+            <input type="text" placeholder="First Name" class="input" id="fname" required><br>
+            <input type="text" placeholder="Last Name" class="input" id="lname" required><br>
+            <input type="number" placeholder="Age" class="input" id="age" required><br>
+            <input type="password" placeholder="Password" class="input" id="pass" required><br>
+            <input type="submit" placeholder="Sign Up" class="signup-button"><br>
+            <a href="/login" class="already">Already Have An Account?</a>
+        </form>
+    </div>
+    <div class="spacer"></div>
+    <footer>
+        <ul>
+            <li>copyright &copy; Health Tracker | Mahmoud Ghassan</li>
+        </ul>
+    </footer>
+    <script src="../js/signup.js"></script>
+</body>
+</html>
